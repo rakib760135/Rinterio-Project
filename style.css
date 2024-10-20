@@ -58,11 +58,6 @@
 
     /* Nav-bar section */
 
-    .nav-bar{
-        position: fixed;
-        background-color: white;
-    }
-
     .nav-bar .logo i{
         font-size:22px;
     }
@@ -360,17 +355,3 @@
 }
 
     /* Extra small devices (phones, 600px and down)  /* Media  query End */
-
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-
-    body{
-        background-color: aqua;
-    }
-
-
-}
-
