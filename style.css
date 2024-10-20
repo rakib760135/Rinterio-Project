@@ -1,5 +1,376 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
 
 }
+
+    /* Aeeow icon style */
+
+.logo{
+    align-items: center;
+}
+
+.arrow-logo{
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 7px;
+}
+
+.arrow-logo i{
+    transform: rotate(315deg);
+    border-radius: 50%;
+}
+    /* Aeeow icon style End */
+
+
+
+.herotext button{
+    background-color: #d0fa9f;
+    border: 1px solid #9ce34c;
+    cursor: pointer;
+}
+
+.portfolio-box .box1, .box2, .box3, .box4, .box5{
+    border: 1.5px solid #e4e2e2;
+}
+
+.Connect-Section-container{
+    background-image: url(assets/bg.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border: 0.5rem solid white;
+}
+
+
+
+/* Media  query Start */
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+
+
+    /* Nav-bar section */
+
+    .nav-bar{
+        position: fixed;
+        background-color: white;
+    }
+
+    .nav-bar .logo i{
+        font-size:22px;
+    }
+
+    .nav-bar .menu-icon{
+        display: initial;
+    }
+
+    .nav-bar .menu-icon i{
+        font-size: 2.1rem;
+    }
+
+
+    .nav-bar .text-area{
+        display: none;
+    }
+
+    .nav-right i, .search-icon, .shoping-cart, .btn{
+        display: none;
+    };
+
+    
+
+
+    /* hero section */
+
+    .herotext{
+        width: 90%;
+    }
+    .herotext h2{
+        font-size: 2.1rem;
+        margin-top: 10px;
+    }
+
+    .herotext p{
+        width: 100%;
+        font-size: 14px;
+    }
+
+
+    /* About us section */
+
+    .about-Section{
+        flex-direction: column;
+        align-items:center;
+    }
+    .aboutUs .vector{
+        display: none;
+    }
+
+    .about-Section .about-us-left{
+        width: 100%;
+    }
+    .about-Section .about-us-left .about-text{
+        align-items: center;
+    }
+
+    .about-Section .about-us-left .about-text h2{
+        font-size: 30px;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+
+    .about-Section .about-us-left .about-text p{
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+
+    .Commercial .text-area p{
+        width: 90%;
+        margin-bottom: 2px;
+
+    }
+
+    .Commercial .text-area{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .Commercial img{
+        height: 60px;
+    }
+
+    .Commercial{
+        gap: 10px;
+        padding-bottom: 0px;
+    }
+
+    .Residential .text-area p{
+        width: 90%;
+        margin-bottom: 2px;
+
+    }
+
+    .Residential .text-area{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+    .Residential img{
+        height: 60px;
+    }
+
+    .Residential{
+        gap: 10px;
+        padding-bottom: 0px;
+    }
+
+    .about-Section .about-us-right{
+        width: 100%;
+    }
+
+    .about-Section .about-us-right .img{
+        padding:0;
+        margin-top: 15px;
+    }
+
+
+    /* rating section */
+
+    .rating{
+        flex-direction: column;
+        margin-top: 35px;
+        gap: 50px;
+        width: 85%;
+    }
+
+
+    /* Works-Process section */
+
+    .Works-Process .text-area h2{
+        margin: 30px 0;
+
+    }
+
+    .Works-Process .text-area p{
+        width: 80%;
+    }
+
+    .Works-Process .box-area{
+        flex-wrap: wrap;
+    }
+
+
+    /* latest Portfolio section */
+
+    .Portfolio-section{
+        padding-bottom: 20px;
+    }
+
+    .portfolio-text-area{
+        padding-top: 75px;
+    }
+
+    .portfolio-text-area h2{
+        margin: 29px 0 ;
+    }
+
+    .portfolio-text-area p{
+        width: 80%;
+    }
+
+    .portfolio-box{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        row-gap: 10px;
+        column-gap: 0px;
+
+    }
+
+    .portfolio-box .box1{
+        grid-column: 1 / span 1;
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .portfolio-box .box2{
+        grid-column: 1 / span 1;
+    }
+
+    .portfolio-box .box3{
+        grid-column: 1 / span 1;
+
+    }
+
+    .portfolio-box .box4{
+        grid-column: 1 / span 1;
+        flex-direction: column;
+    }
+
+    .portfolio-box .box1 img{
+        width: 260px;
+    }
+
+    .portfolio-box .box2 img{
+        height: 280px;
+
+    }
+
+    .portfolio-box .box3 img{
+        height: 280px;
+
+    }
+    .portfolio-box .box4 img{
+        height: 200px;
+    }
+    .portfolio-box .box5 img{
+        height: 280px;
+    }
+
+
+    /* Articles and News section */
+
+    .Articles-section .text-area{
+        padding-top: 60px;
+    }
+
+    .Articles-section .text-area h2{
+        font-size: 24px;
+        margin: 15px;
+    }
+
+    .Articles-section .text-area p{
+        width: 80%;
+
+    }
+    .Articl-box{
+        flex-wrap: wrap;
+    }
+
+
+    /* Connect Section */
+
+    .Connect-Section-container .text-area p{
+        width: 85%;
+    }
+
+    .connect-box{
+        width: 85%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        column-gap: 0px;
+    }
+
+    .connect-box .box1{
+        grid-column: 1 / span 1;
+    }
+    .connect-box .box2{
+        grid-column: 1 / span 1;
+    }
+    .connect-box .box3{
+        grid-column: 1 / span 1;
+    }
+    .connect-box .box4{
+        grid-column: 1 / span 1;
+    }
+    .connect-box .box5{
+        grid-column: 1 / span 1;
+    }
+    .connect-box .box6{
+        grid-column: 1 / span 1;
+
+    }
+
+
+    /* Footer Section */
+
+    .footer-para{
+        width: 70%;
+    }
+
+    .footer-para .logo h2{
+        font-size: 2.5rem;
+    }
+
+    .footer-para .logo{
+        gap: 9px;
+    }
+
+    .footer-para .logo .arrow-logo i{
+        font-size: 20px;
+    }
+
+    footer .text-area ul{
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+    /* Extra small devices (phones, 600px and down)  /* Media  query End */
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+    body{
+        background-color: aqua;
+    }
+
+
+}
+
